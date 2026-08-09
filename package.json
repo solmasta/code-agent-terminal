@@ -1,0 +1,21 @@
+{
+  "name": "code-agent-terminal-edge",
+  "version": "1.0.0",
+  "description": "Edge Runtime implementation for code-agent-terminal",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev src/index.js",
+    "deploy": "wrangler deploy src/index.js"
+  },
+  "keywords": [
+    "edge",
+    "runtime",
+    "cloudflare",
+    "workers"
+  ],
+  "author": "Code Agent Terminal Team",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
