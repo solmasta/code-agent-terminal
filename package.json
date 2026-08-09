@@ -1,21 +1,21 @@
 {
-  "name": "code-agent-terminal-edge",
+  "name": "code-agent-terminal",
   "version": "1.0.0",
-  "description": "Edge Runtime implementation for code-agent-terminal",
-  "main": "src/index.js",
+  "description": "A terminal interface for code agents",
+  "main": "index.js",
   "scripts": {
-    "dev": "wrangler dev src/index.js",
-    "deploy": "wrangler deploy src/index.js"
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish"
   },
-  "keywords": [
-    "edge",
-    "runtime",
-    "cloudflare",
-    "workers"
-  ],
-  "author": "Code Agent Terminal Team",
+  "keywords": ["edge", "runtime", "terminal", "agent"],
+  "author": "Code Agent Team",
   "license": "MIT",
   "devDependencies": {
-    "wrangler": "^3.0.0"
+    "@cloudflare/workers-types": "^4.20231025.0",
+    "wrangler": "^3.15.0"
+  },
+  "dependencies": {
+    "@edge-runtime/node-utils": "^2.0.0",
+    "@edge-runtime/ponyfill": "^2.4.0"
   }
 }
